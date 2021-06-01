@@ -1,0 +1,38 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="butpokaz" Content="Pokaż model" HorizontalAlignment="Left" Margin="329,346,0,0" VerticalAlignment="Top" Height="45" Width="138" Click="butpokaz_Click"/>
+        <Label Content="Konkretny model" HorizontalAlignment="Left" Margin="154,286,0,0" VerticalAlignment="Top" Height="32" Width="116"/>
+        <ListBox Margin="424,46,200,237" RenderTransformOrigin="0.253,0.441">
+            <CheckBox x:Name="checkrodz" Content="Rodzinne" Height="31" Width="154" FontSize="16"/>
+            <CheckBox x:Name="checksport" Content="Sportowe" Height="31" Width="147" FontSize="16"/>
+            <CheckBox x:Name="checkbus" Content="Bus" Height="31" Width="147" FontSize="16"/>
+        </ListBox>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Margin="287,292,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="218" Height="24" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <RadioButton x:Name="radiogorna" Content="Górna półka cenowa" HorizontalAlignment="Left" Margin="227,250,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <RadioButton x:Name="radiodolna" Content="Dolna półka cenowa" HorizontalAlignment="Left" Margin="424,254,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <ListBox Margin="180,46,435,237" RenderTransformOrigin="0.253,0.441">
+            <CheckBox x:Name="checkbmw" Content="BMW" Height="31" Width="154" FontSize="16" Checked="checkbmw_Checked"/>
+            <CheckBox x:Name="checkaudi" Content="Audi" Height="31" Width="147" FontSize="16"/>
+            <CheckBox x:Name="checkford" Content="Ford" Height="31" Width="147" FontSize="16"/>
+        </ListBox>
+        <Label Content="Marka" HorizontalAlignment="Left" Margin="180,20,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Przeznaczenie" HorizontalAlignment="Left" Margin="424,22,0,0" VerticalAlignment="Top" Width="106"/>
+
+    </Grid>
+</Window>
